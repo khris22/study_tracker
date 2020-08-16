@@ -1,2 +1,2 @@
-# Training and Studies Tracker
-Logs of personal trainings &amp; studies not pushed to Github
+# Study Tracker
+Personal training logs of HTML, CSS, JavaScript, &amp; Algorithms
