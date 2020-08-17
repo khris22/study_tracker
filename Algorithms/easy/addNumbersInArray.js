@@ -11,13 +11,13 @@ function findSum(array) {
     
     return sum
 }
-
 // use built in  reduce method
 
-let findSumUseReduce = arrayOfIntegers.reduce(function(a,b) {
-    return a + b
-}, 0)
-
+let findSumUseReduce = (array) =>{
+    array.reduce(function(a,b) {
+        return a + b
+    }, 0)
+}
 // edge case: array is empty and no InitialValue is provided
 // 0 is the initial value
 // use 1 for multiplication
