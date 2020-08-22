@@ -19,6 +19,13 @@ function reverseInt(n) {
         return parseInt(numStr) * -1
       }
      return parseInt(numStr)
-  }
-  
-  
+//   } not ideal to have two return statements
+}
+
+function reverseInt1(n) {
+    let numStr = n.toString().split('').reverse().join('')
+    // check if n is a negative number
+    // Math.sign(n) if is greater than 0 will return postive
+    // if n is less than zero then it will return negative
+    return parseInt(numStr) * Math.sign(n);
+}
