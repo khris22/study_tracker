@@ -63,14 +63,19 @@ function steps(n, row = 0, stair = ''){
     }
     
     // if the length of the stair string is less than or equal to the row number we're working on we add '#' else we add ' '
-    // change the n
-    if(stair.length <= row){
-        stair += '#';
-    } else {
-        stair += ' ';
-    }
-    // call the function
-    steps(n, row, stair);
+    // // change the n
+    // if(stair.length <= row){
+    //     stair += '#';
+    // } else {
+    //     stair += ' ';
+    // }
+    // // call the function
+    // steps(n, row, stair);
+
+    // refactor 
+    const add = stair.length <= row ? '#' : ' ';
+    steps(n, row, stair + add)
+
 
 }
 
